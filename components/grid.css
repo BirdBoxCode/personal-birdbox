@@ -1,0 +1,108 @@
+.nav-section {
+  height: 5vh;
+  padding-top: 1vh;
+}
+
+.main-section {
+  padding-top: 2vh;
+}
+
+.grid-content {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-gap: 1vw;
+  margin: 0vw 2vw;
+}
+
+.about-section {
+  grid-column: span 2;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  height: 62vh;
+  overflow-y: scroll;
+  position: relative;
+}
+
+.project-section {
+  grid-column: span 2;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 62vh;
+  overflow-y: scroll;
+  padding-right: 1vw;
+}
+
+.preview-section {
+    grid-column: span 4;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 62vh;
+}
+
+.nav-left {
+  grid-column: 1;
+}
+
+.nav-center {
+  grid-column: span 2;
+}
+
+.nav-right {
+  grid-column: 8;
+  text-align: end;
+}
+
+.header-header {
+  grid-column: span 8;
+}
+
+  .about-section::-webkit-scrollbar {
+    width: 0.1em;
+  }
+
+  .about-section::-webkit-scrollbar-track {
+    background-color: #888;
+
+  }
+
+  .about-section::-webkit-scrollbar-thumb {
+    background-color: #f1f1f1;
+  }
+
+  .project-section::-webkit-scrollbar {
+    width: 0.1em;
+  }
+
+  .project-section::-webkit-scrollbar-track {
+    background-color: #888;
+
+  }
+
+  .project-section::-webkit-scrollbar-thumb {
+    background-color: #f1f1f1;
+  }
+
+  #beh-section::-webkit-scrollbar {
+    width: 0.0em;
+  }
+
+  #na-section::-webkit-scrollbar {
+    width: 0.0em;
+  }
+
+  #moss-section::-webkit-scrollbar {
+    width: 0.0em;
+  }
+
+  #pitch-section::-webkit-scrollbar {
+    width: 0.0em;
+  }
+
+#preview {
+    height: 58vh;
+    width: 47.5vw;
+}

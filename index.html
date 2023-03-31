@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.2/css/all.css">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@700&display=swap" rel="stylesheet">
+    <title>BirdBox Code</title>
+    <meta name="description" content= "My name's Chris McCarthy, and here's what I do.">
+  </head>
+  <body>
+    <canvas class="noise"></canvas>
+      <header>
+        <div class = "nav-section">
+          <div class="grid-content">
+            <div class="nav-left">
+              <img class="bbc" src="https://res.cloudinary.com/depkh8amy/image/upload/v1680126141/BirdBox%20Code/BirdBox_dgn3ja.png">
+            </div>
+            <div class="nav-center">
+              <p></p>
+            </div>
+            <div class="nav-right">
+              <button class="btn-contact">CONTACT</button>
+            </div>
+          </div>
+        </div>
+        <div class="head-section">
+          <div class="grid-content">
+            <div class="header-header">
+              <div class="separator-line">
+                <span class="line-top"></span>
+              </div>
+                <h1>BIRDBOX CODE</h1>
+              <div class="separator">
+                <span class="line-bot"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="main-section">
+        <div class="grid-content">
+          <div class="about-section">
+            <h2>About Me</h2>
+            <p>Hey there! I'm Chris McCarthy.</p>
+            <h2>What do I do?</h2>
+            <p>I'm a full-stack developer with a higher focus on front-end, design, and usability. I also co-run the Berlin based Gaming network - Beat Em Hub.</p>
+            <h2>What is BirdBox Code?</h2>
+            <p>How I represent my own design and code. Learning from different practices under certain rules, whilst keeping an open door for experimentation.</p>
+            <h2>What is BirdBox Code?</h2>
+            <p>How I represent my own design and code. Learning from different practices under certain rules, whilst keeping an open door towards experimentation.</p>
+            <h2>What is BirdBox Code?</h2>
+            <p>How I represent my own design and code. Learning from different practices under certain rules, whilst keeping an open door towards experimentation.</p>
+            <h2>What is BirdBox Code?</h2>
+            <p>How I represent my own design and code. Learning from different practices under certain rules, whilst keeping an open door towards experimentation.</p>
+          </div>
+          <div class="project-section">
+            <h2>Current Projects</h2>
+              <div class="separator">
+                <span class="line-bot"></span>
+              </div>
+              <button id="beh-btn" class="active" onclick="toggleButtonColor(this)">BEAT EM HUB</button>
+              <div class="separator">
+                <span class="line-bot"></span>
+              </div>
+              <button id="na-btn" onclick="toggleButtonColor(this)">NERDADVISOR</button>
+              <div class="separator">
+                <span class="line-bot"></span>
+              </div>
+              <button id="moss-btn" onclick="toggleButtonColor(this)">MOSS RADIO</button>
+              <div class="separator">
+                <span class="line-bot"></span>
+              </div>
+              <button id="pitch-btn" onclick="toggleButtonColor(this)">PITCH DECK</button>
+              <div class="separator">
+                <span class="line-bot"></span>
+              </div>
+          </div>
+          <div class="preview-section">
+            <h2>Project Preview</h2>
+            <div id="beh-section">
+                <img class="img-wrapper" src="https://res.cloudinary.com/depkh8amy/image/upload/v1680013223/BirdBox%20Code/beh-1_dcp0x9.png">
+                <img class="img-wrapper" src="https://res.cloudinary.com/depkh8amy/image/upload/v1680013221/BirdBox%20Code/beh-2_wh5b5t.png">
+                <img class="img-wrapper" src="https://res.cloudinary.com/depkh8amy/image/upload/v1680013222/BirdBox%20Code/beh-3_hzainp.png">
+                <img class="img-wrapper" src="https://res.cloudinary.com/depkh8amy/image/upload/v1680013221/BirdBox%20Code/beh-4_stdg3x.png">
+            </div>
+            <div id="na-section" style="display:none;">
+              <img class="img-wrapper" src="https://res.cloudinary.com/depkh8amy/image/upload/v1680015850/BirdBox%20Code/na-1_m744sw.png">
+              <img class="img-wrapper" src="https://res.cloudinary.com/depkh8amy/image/upload/v1680015851/BirdBox%20Code/na-2_duv3as.png">
+              <img class="img-wrapper" src="https://res.cloudinary.com/depkh8amy/image/upload/v1680015849/BirdBox%20Code/na-3_hyacot.png">
+            </div>
+            <div id="moss-section" style="display:none;">
+              <img class="img-wrapper" src="https://res.cloudinary.com/depkh8amy/image/upload/v1680017128/BirdBox%20Code/moss-1_qkkyna.png">
+              <img class="img-wrapper" src="https://res.cloudinary.com/depkh8amy/image/upload/v1680017128/BirdBox%20Code/moss-2_myse5d.png">
+              <img class="img-wrapper" src="https://res.cloudinary.com/depkh8amy/image/upload/v1680017128/BirdBox%20Code/moss-3_dic6yy.png">
+              <img class="img-wrapper" src="https://res.cloudinary.com/depkh8amy/image/upload/v1680017128/BirdBox%20Code/moss-4_orkmym.png">
+            </div>
+            <div id="pitch-section" style="display:none;">
+              <img class="img-wrapper" src="https://res.cloudinary.com/depkh8amy/image/upload/v1680017696/BirdBox%20Code/pitch-1_x5d1li.png">
+              <img class="img-wrapper" src="https://res.cloudinary.com/depkh8amy/image/upload/v1680017697/BirdBox%20Code/pitch-2_loawkp.png">
+              <img class="img-wrapper" src="https://res.cloudinary.com/depkh8amy/image/upload/v1680017697/BirdBox%20Code/pitch-3_thwuka.png">
+              <img class="img-wrapper" src="https://res.cloudinary.com/depkh8amy/image/upload/v1680017697/BirdBox%20Code/pitch-4_gd3qqk.png">
+            </div>
+          </div>
+          <div class="separator">
+            <span class="line-top"></span>
+          </div>
+        </div>
+      </div>
+      <footer>
+          <div class="flex-links">
+            <div class="link-wrapper">
+              <p3 id="link-1">GitHub</p>
+            </div>
+            <div class="link-wrapper">
+              <p3 id="link-2">LinkedIn</p>
+            </div>
+            <div class="link-wrapper">
+              <p3 id="link-3">LinkTree</p>
+            </div>
+            <div class="link-wrapper">
+              <p3 id="link-4">Insta</p>
+            </div>
+            <div class="link-wrapper">
+              <p3 id="link-5">Vimeo</p>
+            </div>
+            <div class="link-wrapper" style="border: none;">
+              <p3 id="link-6">Facebook</p>
+            </div>
+          </div>
+      </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,20 @@
+#beh-section, #na-section, #moss-section, #pitch-section {
+  grid-column: span 2;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  height: 62vh;
+  overflow-y: scroll;
+  position: relative;
+}
+
+.img-wrapper {
+  width: 47.5vw;
+  border-radius: 10px;
+  margin: 0.3em 0;
+}
+
+.bbc {
+  height: 4vh;
+}

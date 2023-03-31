@@ -1,0 +1,44 @@
+.btn-contact {
+  width: 8vw;
+  height: 4vh;
+  border: 2px solid #fd36d4;
+  border-radius: 10px;
+  font-family: 'Jura', sans-serif;
+  font-size: 1vw;
+  color: #fd36d4;
+  text-shadow: 0 0 12px #fd36d4;
+  background-color: transparent;
+}
+
+#beh-btn, #na-btn, #moss-btn, #pitch-btn {
+  width: 8vw;
+  height: 15vh;
+  border: none;
+  font-family: 'Jura', sans-serif;
+  font-size: 2vw;
+  color: #FFFFFF;
+  background-color: transparent;
+  text-align: left;
+  width: 100%;
+  cursor: pointer;
+}
+
+#beh-btn.active{
+  color: #fd36d4;
+  text-shadow: 0 0 12px #fd36d4;
+}
+
+#na-btn.active{
+  color: #fd36d4;
+  text-shadow: 0 0 12px #fd36d4;
+}
+
+#moss-btn.active{
+  color: #fd36d4;
+  text-shadow: 0 0 12px #fd36d4;
+}
+
+#pitch-btn.active{
+  color: #fd36d4;
+  text-shadow: 0 0 12px #fd36d4;
+}
