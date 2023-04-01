@@ -66,10 +66,25 @@ P2 {
   margin: 2vh 0;
 }
 
-p3 {
+a {
   font-weight: lighter;
   color: white;
   font-size: 0.8vw;
+  text-decoration: none;
+}
+
+.pink-link {
+  font-family: 'Jura', sans-serif;
+  font-size: 1vw;
+  color: #fd36d4;
+  text-shadow: 0 0 12px #fd36d4;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #fd36d4;
+  text-shadow: 0 0 12px #fd36d4;
+  transition: 0.1s ease-in-out;
 }
 
 .separator {
