@@ -5,9 +5,12 @@
   border-radius: 10px;
   font-family: 'Jura', sans-serif;
   font-size: 1vw;
-  color: #fd36d4;
-  text-shadow: 0 0 12px #fd36d4;
   background-color: transparent;
+}
+
+.btn-contact:hover, .btn-contact:hover a {
+  border-color: #09FFD8;
+  color: #09FFD8;
 }
 
 #beh-btn, #na-btn, #moss-btn, #pitch-btn {
@@ -41,4 +44,10 @@
 #pitch-btn.active{
   color: #fd36d4;
   text-shadow: 0 0 12px #fd36d4;
+}
+
+button:hover {
+  color: #09FFD8;
+  text-shadow: 0 0 12px #09FFD8;
+  transition: 0.1s ease-in-out;
 }
