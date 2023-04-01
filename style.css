@@ -37,7 +37,7 @@ canvas {
 
 h1 {
   font-family: 'Jura', sans-serif;
-  font-size: 12vw;
+  font-size: 11.9vw;
   text-align: center;
   color: #FFFFFF;
   text-shadow: 0 0 12px #fff;
@@ -146,7 +146,7 @@ margin: 1vh 2vw;
 @media (min-width: 800px) {
 
 h1 {
-    font-size: 12vw
+    font-size: 11.9vw
 
 }
 
