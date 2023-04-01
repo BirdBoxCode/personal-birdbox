@@ -12,7 +12,7 @@
   border-color: #09FFD8;
   color: #09FFD8;
   text-shadow: 0 0 12px #09FFD8;
-  transition: 0.1s ease-in-out !important;
+  transition: 0.2s ease-in-out !important;
 }
 
 #beh-btn, #na-btn, #moss-btn, #pitch-btn {
@@ -47,8 +47,6 @@
   color: #fd36d4;
   text-shadow: 0 0 12px #fd36d4;
 }
-
-/* test */
 
 button:hover {
   color: #09FFD8;
