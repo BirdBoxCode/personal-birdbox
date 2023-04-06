@@ -73,6 +73,14 @@ a {
   text-decoration: none;
 }
 
+#site-link {
+  font-family: 'Jura', sans-serif;
+  font-size: 1vw;
+  color: #d9d9d9;
+  text-shadow: 0 0 12px #d9d9d937;
+  text-decoration: none;
+}
+
 .pink-link {
   font-family: 'Jura', sans-serif;
   font-size: 1vw;
@@ -81,7 +89,20 @@ a {
   text-decoration: none;
 }
 
+#site-btn {
+  font-size: 1vw;
+  color: #fd36d4;
+  text-shadow: 0 0 12px #fd36d4;
+  text-decoration: none;
+}
+
 a:hover {
+  color: #fd36d4;
+  text-shadow: 0 0 12px #fd36d4;
+  transition: 0.1s ease-in-out;
+}
+
+#site-link:hover {
   color: #fd36d4;
   text-shadow: 0 0 12px #fd36d4;
   transition: 0.1s ease-in-out;

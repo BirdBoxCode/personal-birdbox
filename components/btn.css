@@ -1,5 +1,5 @@
 .btn-contact {
-  width: 8vw;
+  width: 10vw;
   height: 4vh;
   border: 0 0 12px #fd36d4;
   border-radius: 10px;
@@ -49,6 +49,12 @@
 }
 
 button:hover {
+  color: #09FFD8;
+  text-shadow: 0 0 12px #09FFD8;
+  transition: 0.1s ease-in-out;
+}
+
+#site-btn:hover {
   color: #09FFD8;
   text-shadow: 0 0 12px #09FFD8;
   transition: 0.1s ease-in-out;
