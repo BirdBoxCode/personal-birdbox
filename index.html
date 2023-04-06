@@ -49,7 +49,6 @@
             <p>Hey there! I'm Chris McCarthy. Originally from England, living in Berlin.</p>
             <h2>What do I do?</h2>
             <p>I’m a junior full-stack web developer, with most of my experience being in front-end. I am the lead developer and one of the original members of the Berlin based gaming network, Beat Em Hub.
-
               I’m currently diving into React to master JSX and the framework itself, working on unique web designs to bring projects to life!
               </p>
             <h2>What is Beat Em Hub?</h2>
@@ -63,25 +62,28 @@
               <div class="separator">
                 <span class="line-bot"></span>
               </div>
-              <button id="beh-btn" class="active" onclick="toggleButtonColor(this)">BEAT EM HUB</button>
+              <button id="beh-btn" class="active" onclick="toggleButtonColor(this); setSiteLink('https://beatemhub.com/')">BEAT EM HUB</button>
               <div class="separator">
                 <span class="line-bot"></span>
               </div>
-              <button id="na-btn" onclick="toggleButtonColor(this)">NERDADVISOR</button>
+              <button id="na-btn" onclick="toggleButtonColor(this); setSiteLink('http://www.nerdadvisor.org/')">NERDADVISOR</button>
               <div class="separator">
                 <span class="line-bot"></span>
               </div>
-              <button id="moss-btn" onclick="toggleButtonColor(this)">MOSS RADIO</button>
+              <button id="moss-btn" onclick="toggleButtonColor(this); setSiteLink('https://www.mossradio.live/users/sign_in')">MOSS RADIO</button>
               <div class="separator">
                 <span class="line-bot"></span>
               </div>
-              <button id="pitch-btn" onclick="toggleButtonColor(this)">PITCH DECK</button>
+              <button id="pitch-btn" onclick="toggleButtonColor(this); setSiteLink('https://beatemhub.com/')">PITCH DECK</button>
               <div class="separator">
                 <span class="line-bot"></span>
               </div>
           </div>
           <div class="preview-section">
-            <h2>Project Preview</h2>
+            <div class="preview-header">
+              <h2>Project Preview</h2>
+              <button class="btn-contact"><a id="site-btn" href="" target="_blank">VIEW SITE</a></button></h2>
+            </div>
             <div id="beh-section">
                 <img class="img-wrapper" src="https://res.cloudinary.com/depkh8amy/image/upload/v1680013223/BirdBox%20Code/beh-1_dcp0x9.png">
                 <img class="img-wrapper" src="https://res.cloudinary.com/depkh8amy/image/upload/v1680013221/BirdBox%20Code/beh-2_wh5b5t.png">

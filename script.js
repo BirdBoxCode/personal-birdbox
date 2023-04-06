@@ -91,3 +91,19 @@ function toggleButtonColor(button) {
   window.addEventListener("load", function() {
     toggleButtonColor(activeButton);
 });
+
+// Link Changer
+
+function setSiteLink(url) {
+  var siteLink = document.getElementById("site-btn");
+  siteLink.href = url;
+}
+
+const siteLink = document.getElementById("site-btn");
+
+// Check if there is a saved link in the local storage
+if (localStorage.getItem("defaultLink")) {
+  siteLink.href = localStorage.getItem("defaultLink");
+} else {
+  siteLink.href = "https://beatemhub.com"; // Default link
+}
