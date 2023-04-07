@@ -23,6 +23,7 @@
   height: 62vh;
   overflow-y: scroll;
   position: relative;
+  padding-right: 1em;
 }
 
 .project-section {
