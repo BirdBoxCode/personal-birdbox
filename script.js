@@ -107,3 +107,47 @@ if (localStorage.getItem("defaultLink")) {
 } else {
   siteLink.href = "https://beatemhub.com"; // Default link
 }
+
+// HEADER FADE
+
+const aboutSection = document.querySelector('.about-section');
+const aboutHeader = document.querySelector('.about-header');
+
+aboutSection.addEventListener('scroll', function() {
+  const scrollPosition = aboutSection.scrollTop;
+  const headerHeight = aboutHeader.offsetHeight;
+
+  // Calculate the opacity based on the scroll position
+  const opacity = 1 - (scrollPosition / headerHeight);
+
+  // Set the opacity of the header
+  aboutHeader.style.opacity = opacity;
+});
+
+const projectsSection = document.querySelector('.projects-section');
+const projectsHeader = document.querySelector('.projects-header');
+
+projectsSection.addEventListener('scroll', function() {
+  const scrollPosition = projectsSection.scrollTop;
+  const headerHeight = projectsHeader.offsetHeight;
+
+  // Calculate the opacity based on the scroll position
+  const opacity = 1 - (scrollPosition / headerHeight);
+
+  // Set the opacity of the header
+  projectsHeader.style.opacity = opacity;
+});
+
+const previewSection = document.querySelector('.preview-section');
+const previewHeader = document.querySelector('.preview-header');
+
+previewSection.addEventListener('scroll', function() {
+  const scrollPosition = previewSection.scrollTop;
+  const headerHeight = previewHeader.offsetHeight;
+
+  // Calculate the opacity based on the scroll position
+  const opacity = 1 - (scrollPosition / headerHeight);
+
+  // Set the opacity of the header
+  previewHeader.style.opacity = opacity;
+});
