@@ -13,108 +13,94 @@
     <meta name="description" content= "My name's Chris McCarthy, and here's what I do.">
   </head>
   <body>
-    <canvas class="noise"></canvas>
-      <header>
-        <div class = "nav-section">
-          <div class="grid-content">
-            <div class="nav-left">
-              <img class="bbc" src="https://res.cloudinary.com/depkh8amy/image/upload/v1680126141/BirdBox%20Code/BirdBox_dgn3ja.png">
+    <!-- <canvas class="noise"></canvas> -->
+    <!-- Navbar -->
+      <section class="navbar">
+        <header>
+          <nav>
+            <ul>
+              <li><img class="bbc" src="https://res.cloudinary.com/depkh8amy/image/upload/v1680126141/BirdBox%20Code/BirdBox_dgn3ja.png"></li>
+              <li><button class="btn-contact"><a class="pink-link" href="mailto:chris@beatemhub.com">CONTACT</a></button></li>
+            </ul>
+          </nav>
+        </header>
+      </section>
+    <!-- Header -->
+      <section class="header">
+        <div class="header-container">
+            <h1>BIRDBOX CODE</h1>
+        </div>
+      </section>
+    <!-- Main Section -->
+      <section class="main">
+        <div class="about-section">
+          <h2>About Me</h2>
+          <p>Hey there! I'm Chris McCarthy. Originally from England, living in Berlin.</p>
+          <h2>What do I do?</h2>
+          <p>I’m a Front-End web developer, with a love for usability and design. I am the lead developer and one of the original members of the Berlin based gaming network, Beat Em Hub.
+            I’m currently diving into React to master JSX and the framework itself, working on unique web designs and brands to bring projects to life.<br><br> With experience in Ruby on the Ruby On Rails MVC Architecture, I'm also looking for more opportutnies to push my back-end code.<br><br> Please check my examples in the Project Preview section and feel free to contact me if you have work that needs doing along these lines!
+            </p>
+          <h2>What is Beat Em Hub?</h2>
+          <p>We are a group of passionate gamers with a love for the community, with one wish to bridge the gap between the indie developers and big gaming companies. Beat Em Hub began with casual gaming events where gamers and non-gamers could come together, play, meet, relax and have fun.
+            Just over 1 year later we are now organising casual events from Indie specials to full LAN parties, working on projects within the educational sector, and even our very own career development platform - NerdAdvisor.</p>
+          <h2>What do I think of Chat GPT?</h2>
+          <p>As a relatively young developer, I cannot speak for experienced programmers out there and respect other peoples views on this subject. However, I believe that while we must be careful with such AI technologies by creating the correct measures to limit and understand them, GPT-4 for example is an incredible tool that must be used for the good of human kind. It will certainly not replace my creativity and curiosity, especially towards code, but it will for sure help me to learn more and potentially create better programs at an earlier stage.</p>
+        </div>
+        <div class="projects-section">
+          <h2>Current Projects</h2>
+            <div class="separator">
+              <span class="line-bot"></span>
             </div>
-            <div class="nav-center">
-              <p></p>
+            <button id="beh-btn" class="active" onclick="toggleButtonColor(this); setSiteLink('https://beatemhub.com/')">BEAT EM HUB</button>
+            <div class="separator">
+              <span class="line-bot"></span>
             </div>
-            <div class="nav-right">
-              <button class="btn-contact"><a class="pink-link" href="mailto:chris@beatemhub.com">CONTACT</a></button>
+            <button id="na-btn" onclick="toggleButtonColor(this); setSiteLink('http://www.nerdadvisor.org/')">NERDADVISOR</button>
+            <div class="separator">
+              <span class="line-bot"></span>
             </div>
+            <button id="moss-btn" onclick="toggleButtonColor(this); setSiteLink('https://www.mossradio.live/users/sign_in')">MOSS RADIO</button>
+            <div class="separator">
+              <span class="line-bot"></span>
+            </div>
+            <button id="pitch-btn" onclick="toggleButtonColor(this); setSiteLink('https://drive.google.com/file/d/1vX6L3WkvlFNAVc9XMu0XEv1lNnEQ-JiC/view?usp=sharing')">PITCH DECK</button>
+            <div class="separator">
+              <span class="line-bot"></span>
+            </div>
+        </div>
+        <div class="preview-section">
+          <div class="preview-header">
+            <h2>Project Preview</h2>
+            <button class="btn-contact"><a id="site-btn" href="" target="_blank">VIEW SITE</a></button></h2>
+          </div>
+          <div id="beh-section">
+              <img class="img-wrapper" src="https://res.cloudinary.com/depkh8amy/image/upload/v1680013223/BirdBox%20Code/beh-1_dcp0x9.png">
+              <img class="img-wrapper" src="https://res.cloudinary.com/depkh8amy/image/upload/v1680795260/BirdBox%20Code/beh-3_uotsqc.png">
+              <img class="img-wrapper" src="https://res.cloudinary.com/depkh8amy/image/upload/v1680013221/BirdBox%20Code/beh-2_wh5b5t.png">
+              <img class="img-wrapper" src="https://res.cloudinary.com/depkh8amy/image/upload/v1680795259/BirdBox%20Code/beh-4_vuf8kd.png">
+              <img class="img-wrapper" src="https://res.cloudinary.com/depkh8amy/image/upload/v1680013222/BirdBox%20Code/beh-3_hzainp.png">
+              <img class="img-wrapper" src="https://res.cloudinary.com/depkh8amy/image/upload/v1680013221/BirdBox%20Code/beh-4_stdg3x.png">
+          </div>
+          <div id="na-section" style="display:none;">
+            <img class="img-wrapper" src="https://res.cloudinary.com/depkh8amy/image/upload/v1680015850/BirdBox%20Code/na-1_m744sw.png">
+            <img class="img-wrapper" src="https://res.cloudinary.com/depkh8amy/image/upload/v1680015851/BirdBox%20Code/na-2_duv3as.png">
+            <img class="img-wrapper" src="https://res.cloudinary.com/depkh8amy/image/upload/v1680015849/BirdBox%20Code/na-3_hyacot.png">
+          </div>
+          <div id="moss-section" style="display:none;">
+            <img class="img-wrapper" src="https://res.cloudinary.com/depkh8amy/image/upload/v1680017128/BirdBox%20Code/moss-1_qkkyna.png">
+            <img class="img-wrapper" src="https://res.cloudinary.com/depkh8amy/image/upload/v1680017128/BirdBox%20Code/moss-2_myse5d.png">
+            <img class="img-wrapper" src="https://res.cloudinary.com/depkh8amy/image/upload/v1680017128/BirdBox%20Code/moss-3_dic6yy.png">
+            <img class="img-wrapper" src="https://res.cloudinary.com/depkh8amy/image/upload/v1680017128/BirdBox%20Code/moss-4_orkmym.png">
+          </div>
+          <div id="pitch-section" style="display:none;">
+            <img class="img-wrapper" src="https://res.cloudinary.com/depkh8amy/image/upload/v1680017696/BirdBox%20Code/pitch-1_x5d1li.png">
+            <img class="img-wrapper" src="https://res.cloudinary.com/depkh8amy/image/upload/v1680017697/BirdBox%20Code/pitch-2_loawkp.png">
+            <img class="img-wrapper" src="https://res.cloudinary.com/depkh8amy/image/upload/v1680017697/BirdBox%20Code/pitch-3_thwuka.png">
+            <img class="img-wrapper" src="https://res.cloudinary.com/depkh8amy/image/upload/v1680017697/BirdBox%20Code/pitch-4_gd3qqk.png">
           </div>
         </div>
-        <div class="head-section">
-          <div class="grid-content">
-            <div class="header-header">
-              <div class="separator-line">
-                <span class="line-top"></span>
-              </div>
-                <h1>BIRDBOX CODE</h1>
-              <div class="separator">
-                <span class="line-bot"></span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </header>
-      <div class="main-section">
-        <div class="grid-content">
-          <div class="about-section">
-            <h2>About Me</h2>
-            <p>Hey there! I'm Chris McCarthy. Originally from England, living in Berlin.</p>
-            <h2>What do I do?</h2>
-            <p>I’m a Front-End web developer, with a love for usability and design. I am the lead developer and one of the original members of the Berlin based gaming network, Beat Em Hub.
-              I’m currently diving into React to master JSX and the framework itself, working on unique web designs and brands to bring projects to life.<br><br> With experience in Ruby on the Ruby On Rails MVC Architecture, I'm also looking for more opportutnies to push my back-end code.<br><br> Please check my examples in the Project Preview section and feel free to contact me if you have work that needs doing along these lines!
-              </p>
-            <h2>What is Beat Em Hub?</h2>
-            <p>We are a group of passionate gamers with a love for the community, with one wish to bridge the gap between the indie developers and big gaming companies. Beat Em Hub began with casual gaming events where gamers and non-gamers could come together, play, meet, relax and have fun.
-              Just over 1 year later we are now organising casual events from Indie specials to full LAN parties, working on projects within the educational sector, and even our very own career development platform - NerdAdvisor.</p>
-            <h2>What do I think of Chat GPT?</h2>
-            <p>As a relatively young developer, I cannot speak for experienced programmers out there and respect other peoples views on this subject. However, I believe that while we must be careful with such AI technologies by creating the correct measures to limit and understand them, GPT-4 for example is an incredible tool that must be used for the good of human kind. It will certainly not replace my creativity and curiosity, especially towards code, but it will for sure help me to learn more and potentially create better programs at an earlier stage.</p>
-          </div>
-          <div class="project-section">
-            <h2>Current Projects</h2>
-              <div class="separator">
-                <span class="line-bot"></span>
-              </div>
-              <button id="beh-btn" class="active" onclick="toggleButtonColor(this); setSiteLink('https://beatemhub.com/')">BEAT EM HUB</button>
-              <div class="separator">
-                <span class="line-bot"></span>
-              </div>
-              <button id="na-btn" onclick="toggleButtonColor(this); setSiteLink('http://www.nerdadvisor.org/')">NERDADVISOR</button>
-              <div class="separator">
-                <span class="line-bot"></span>
-              </div>
-              <button id="moss-btn" onclick="toggleButtonColor(this); setSiteLink('https://www.mossradio.live/users/sign_in')">MOSS RADIO</button>
-              <div class="separator">
-                <span class="line-bot"></span>
-              </div>
-              <button id="pitch-btn" onclick="toggleButtonColor(this); setSiteLink('https://drive.google.com/file/d/1vX6L3WkvlFNAVc9XMu0XEv1lNnEQ-JiC/view?usp=sharing')">PITCH DECK</button>
-              <div class="separator">
-                <span class="line-bot"></span>
-              </div>
-          </div>
-          <div class="preview-section">
-            <div class="preview-header">
-              <h2>Project Preview</h2>
-              <button class="btn-contact"><a id="site-btn" href="" target="_blank">VIEW SITE</a></button></h2>
-            </div>
-            <div id="beh-section">
-                <img class="img-wrapper" src="https://res.cloudinary.com/depkh8amy/image/upload/v1680013223/BirdBox%20Code/beh-1_dcp0x9.png">
-                <img class="img-wrapper" src="https://res.cloudinary.com/depkh8amy/image/upload/v1680795260/BirdBox%20Code/beh-3_uotsqc.png">
-                <img class="img-wrapper" src="https://res.cloudinary.com/depkh8amy/image/upload/v1680013221/BirdBox%20Code/beh-2_wh5b5t.png">
-                <img class="img-wrapper" src="https://res.cloudinary.com/depkh8amy/image/upload/v1680795259/BirdBox%20Code/beh-4_vuf8kd.png">
-                <img class="img-wrapper" src="https://res.cloudinary.com/depkh8amy/image/upload/v1680013222/BirdBox%20Code/beh-3_hzainp.png">
-                <img class="img-wrapper" src="https://res.cloudinary.com/depkh8amy/image/upload/v1680013221/BirdBox%20Code/beh-4_stdg3x.png">
-            </div>
-            <div id="na-section" style="display:none;">
-              <img class="img-wrapper" src="https://res.cloudinary.com/depkh8amy/image/upload/v1680015850/BirdBox%20Code/na-1_m744sw.png">
-              <img class="img-wrapper" src="https://res.cloudinary.com/depkh8amy/image/upload/v1680015851/BirdBox%20Code/na-2_duv3as.png">
-              <img class="img-wrapper" src="https://res.cloudinary.com/depkh8amy/image/upload/v1680015849/BirdBox%20Code/na-3_hyacot.png">
-            </div>
-            <div id="moss-section" style="display:none;">
-              <img class="img-wrapper" src="https://res.cloudinary.com/depkh8amy/image/upload/v1680017128/BirdBox%20Code/moss-1_qkkyna.png">
-              <img class="img-wrapper" src="https://res.cloudinary.com/depkh8amy/image/upload/v1680017128/BirdBox%20Code/moss-2_myse5d.png">
-              <img class="img-wrapper" src="https://res.cloudinary.com/depkh8amy/image/upload/v1680017128/BirdBox%20Code/moss-3_dic6yy.png">
-              <img class="img-wrapper" src="https://res.cloudinary.com/depkh8amy/image/upload/v1680017128/BirdBox%20Code/moss-4_orkmym.png">
-            </div>
-            <div id="pitch-section" style="display:none;">
-              <img class="img-wrapper" src="https://res.cloudinary.com/depkh8amy/image/upload/v1680017696/BirdBox%20Code/pitch-1_x5d1li.png">
-              <img class="img-wrapper" src="https://res.cloudinary.com/depkh8amy/image/upload/v1680017697/BirdBox%20Code/pitch-2_loawkp.png">
-              <img class="img-wrapper" src="https://res.cloudinary.com/depkh8amy/image/upload/v1680017697/BirdBox%20Code/pitch-3_thwuka.png">
-              <img class="img-wrapper" src="https://res.cloudinary.com/depkh8amy/image/upload/v1680017697/BirdBox%20Code/pitch-4_gd3qqk.png">
-            </div>
-          </div>
-          <div class="separator">
-            <span class="line-top"></span>
-          </div>
-        </div>
-      </div>
+      </section>
+
       <footer>
           <div class="flex-links">
             <div class="link-wrapper">

@@ -1,20 +1,6 @@
-.nav-section {
-  height: 5vh;
-  padding-top: 1vh;
-}
 
-.main-section {
-  padding-top: 2vh;
-}
 
-.grid-content {
-  display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  grid-gap: 1vw;
-  margin: 0vw 2vw;
-}
-
-.about-section {
+/* .about-section {
   grid-column: span 2;
   display: flex;
   flex-direction: column;
@@ -42,7 +28,7 @@
     flex-direction: column;
     position: relative;
     height: 62vh;
-}
+} */
 
 .nav-left {
   grid-column: 1;
