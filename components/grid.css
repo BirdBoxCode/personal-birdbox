@@ -50,7 +50,7 @@ nav ul {
 .main {
 	display: grid;
 	grid-template-columns: repeat(8, 1fr);
-	height: calc(75vh - 150px - 50px);
+	height: calc(80vh - 150px - 50px);
   margin: 1em 2em;
 }
 
