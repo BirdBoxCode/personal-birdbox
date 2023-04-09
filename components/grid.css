@@ -7,9 +7,7 @@ header {
 }
 
 .navbar {
-	/* display: grid;
-	grid-template-columns: repeat(8, 1fr);
-	place-items: center; */
+	/* grid-template-columns: repeat(8, 1fr); */
   height: 1em;
 }
 
