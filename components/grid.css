@@ -8,7 +8,7 @@ header {
 
 .navbar {
 	/* grid-template-columns: repeat(8, 1fr); */
-  height: 1em;
+
 }
 
 nav {
@@ -48,7 +48,7 @@ nav ul {
 .main {
 	display: grid;
 	grid-template-columns: repeat(8, 1fr);
-	height: calc(80vh - 150px - 50px);
+	height: calc(100vh - 150px - 50px);
   margin: 1em 2em;
 }
 
