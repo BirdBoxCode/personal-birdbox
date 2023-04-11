@@ -195,18 +195,37 @@ margin: 1vh 2vw;
 
   body {
     height: 100%;
-    grid-template-rows: 1fr auto;
   }
 
   h1 {
     font-size: 8vw;
   }
 
+  nav {
+    margin: 1em 1em;
+  }
+
+  .header {
+    margin: 0em 1em;
+  }
+
   .main {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    height: calc(100vh - 150px - 50px);
-    margin: 1em 2em;
+    grid-template-columns: repeat(8, 1fr);
+    /* height: calc(100vh - 150px - 50px); */
+    margin: 1em 1em;
+  }
+
+  .foot-wrap {
+    margin: 0em 1em;
+  }
+
+  .btn-contact {
+  height: 4vw;
+  }
+
+  .bbc {
+    height: 4vw;
   }
 
 
