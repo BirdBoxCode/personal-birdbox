@@ -151,3 +151,19 @@ previewSection.addEventListener('scroll', function() {
   // Set the opacity of the header
   previewHeader.style.opacity = opacity;
 });
+
+
+// MOBILE
+
+function toggleSection(sectionId) {
+  var section = document.getElementById(sectionId);
+  if (section.style.display === "none") {
+    section.style.display = "block";
+    section.style.height = section.scrollHeight + "px";
+  } else {
+    section.style.height = "0";
+    section.addEventListener("transitionend", function() {
+      section.style.display = "none";
+    }, {once: true});
+  }
+}
