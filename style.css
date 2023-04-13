@@ -55,6 +55,13 @@ h2 {
   margin: 1em 0em;
 }
 
+h3 {
+  font-size: 1vw;
+  color: #fd36d4;
+  text-shadow: 0 0 12px #d9d9d937;
+  margin-bottom: 1em;
+}
+
 p {
   font-family: 'Jura', sans-serif;
   font-weight: lighter;
@@ -224,6 +231,11 @@ margin: 1vh 2vw;
     font-size: 5vw;
   }
 
+  h3 {
+    font-size: 4vw;
+    text-align: center;
+  }
+
   nav {
     margin: 1em 1em;
   }
@@ -380,6 +392,11 @@ margin: 1vh 2vw;
   h2 {
     text-align: center;
     font-size: 5vw;
+  }
+
+  h3 {
+    font-size: 3vw;
+    text-align: center;
   }
 
   nav {
