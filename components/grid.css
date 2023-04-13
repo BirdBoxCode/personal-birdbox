@@ -6,11 +6,6 @@ header {
   grid-column: span 8;
 }
 
-.navbar {
-	/* grid-template-columns: repeat(8, 1fr); */
-
-}
-
 nav {
 	display: flex;
 	justify-content: space-between;
