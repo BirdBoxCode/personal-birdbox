@@ -10,10 +10,10 @@ resize();
 window.onresize = resize;
 
 function resize() {
-	canvas.width = window.innerWidth * window.devicePixelRatio
-	canvas.height = window.innerHeight * window.devicePixelRatio
-	canvas.style.width = window.innerWidth + 'px'
-	canvas.style.height = window.innerHeight + 'px'
+	canvas.width = document.body.clientWidth * window.devicePixelRatio;
+	canvas.height = document.body.clientHeight * window.devicePixelRatio;
+	canvas.style.width = document.body.clientWidth + 'px';
+	canvas.style.height = document.body.clientHeight + 'px';
 }
 
 function noise(ctx) {
