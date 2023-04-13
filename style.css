@@ -265,7 +265,7 @@ margin: 1vh 2vw;
 
   .btn-contact {
     width: 20vw;
-    height: 3vh;
+    height: 4vh;
     }
 
     .bbc {
@@ -273,7 +273,7 @@ margin: 1vh 2vw;
     }
 
     .pink-link {
-      font-size: 2vw;
+      font-size: 3vw;
     }
 
   .mob-view-btn {
@@ -294,7 +294,7 @@ margin: 1vh 2vw;
   }
 
   #site-btn {
-    font-size: 2vw;
+    font-size: 3vw;
     color: #fd36d4;
     text-shadow: 0 0 12px #fd36d4;
     text-decoration: none;
