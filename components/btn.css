@@ -61,6 +61,12 @@ button:hover {
 }
 
 #cv-btn {
+  color: #fd36d4;
+  text-shadow: 0 0 12px #fd36d4;
+  transition: 0.1s ease-in-out;
+}
+
+#cv-btn:hover {
   color: #09FFD8;
   text-shadow: 0 0 12px #09FFD8;
   transition: 0.1s ease-in-out;
