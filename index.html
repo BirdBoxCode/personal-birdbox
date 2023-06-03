@@ -14,7 +14,7 @@
     <meta name="description" content= "My name's Chris McCarthy, and here's what I do.">
   </head>
   <body>
-    <canvas class="noise"></canvas>
+    <!-- <canvas class="noise"></canvas> -->
     <!-- Navbar -->
       <section class="navbar">
         <header>
@@ -69,6 +69,10 @@
             <div class="separator">
               <span class="line-bot"></span>
             </div>
+            <button id="gg-btn" onclick="toggleButtonColor(this); setSiteLink('https://gamesground.de/')">GAMES GROUND</button>
+            <div class="separator">
+              <span class="line-bot"></span>
+            </div>
             <button id="na-btn" onclick="toggleButtonColor(this); setSiteLink('http://www.nerdadvisor.org/')">NERDADVISOR</button>
             <div class="separator">
               <span class="line-bot"></span>
@@ -89,12 +93,16 @@
             <button class="btn-contact"><a id="site-btn" href="" target="_blank">VIEW SITE</a></button>
           </div>
           <div id="beh-section">
-              <img class="img-wrapper" src="https://res.cloudinary.com/depkh8amy/image/upload/v1680013223/BirdBox%20Code/beh-1_dcp0x9.png">
-              <img class="img-wrapper" src="https://res.cloudinary.com/depkh8amy/image/upload/v1680795260/BirdBox%20Code/beh-3_uotsqc.png">
-              <img class="img-wrapper" src="https://res.cloudinary.com/depkh8amy/image/upload/v1680013221/BirdBox%20Code/beh-2_wh5b5t.png">
-              <img class="img-wrapper" src="https://res.cloudinary.com/depkh8amy/image/upload/v1680795259/BirdBox%20Code/beh-4_vuf8kd.png">
-              <img class="img-wrapper" src="https://res.cloudinary.com/depkh8amy/image/upload/v1680013222/BirdBox%20Code/beh-3_hzainp.png">
-              <img class="img-wrapper" src="https://res.cloudinary.com/depkh8amy/image/upload/v1680013221/BirdBox%20Code/beh-4_stdg3x.png">
+            <img class="img-wrapper" src="https://res.cloudinary.com/depkh8amy/image/upload/v1680013223/BirdBox%20Code/beh-1_dcp0x9.png">
+            <img class="img-wrapper" src="https://res.cloudinary.com/depkh8amy/image/upload/v1680795260/BirdBox%20Code/beh-3_uotsqc.png">
+            <img class="img-wrapper" src="https://res.cloudinary.com/depkh8amy/image/upload/v1680013221/BirdBox%20Code/beh-2_wh5b5t.png">
+            <img class="img-wrapper" src="https://res.cloudinary.com/depkh8amy/image/upload/v1680795259/BirdBox%20Code/beh-4_vuf8kd.png">
+            <img class="img-wrapper" src="https://res.cloudinary.com/depkh8amy/image/upload/v1680013222/BirdBox%20Code/beh-3_hzainp.png">
+            <img class="img-wrapper" src="https://res.cloudinary.com/depkh8amy/image/upload/v1680013221/BirdBox%20Code/beh-4_stdg3x.png">
+          </div>
+          <div id="gg-section">
+            <img class="img-wrapper" src="https://res.cloudinary.com/depkh8amy/image/upload/v1685789727/BirdBox%20Code/Screenshot_2023-06-03_at_11.54.22_yeyntu.png">
+            <img class="img-wrapper" src="https://res.cloudinary.com/depkh8amy/image/upload/v1685789727/BirdBox%20Code/Screenshot_2023-06-03_at_11.54.35_hp7ftp.png">
           </div>
           <div id="na-section" style="display:none;">
             <img class="img-wrapper" src="https://res.cloudinary.com/depkh8amy/image/upload/v1680015850/BirdBox%20Code/na-1_m744sw.png">
@@ -140,6 +148,17 @@
                 <img class="img-wrapper" src="https://res.cloudinary.com/depkh8amy/image/upload/v1680795259/BirdBox%20Code/beh-4_vuf8kd.png">
                 <img class="img-wrapper" src="https://res.cloudinary.com/depkh8amy/image/upload/v1680013222/BirdBox%20Code/beh-3_hzainp.png">
                 <img class="img-wrapper" src="https://res.cloudinary.com/depkh8amy/image/upload/v1680013221/BirdBox%20Code/beh-4_stdg3x.png">
+            </div>
+            <div class="separator">
+              <span class="line-bot"></span>
+            </div>
+            <button id="mob-gg-btn" onclick="toggleButtonColor(this); toggleSection('mob-gg-section')">GAMES GROUND</button>
+            <div id="mob-gg-section" style="display: none">
+            <div class="mob-preview-header">
+              <button class="mob-view-btn"><a id="site-btn" href="http://www.gamesground.de/" target="_blank">VIEW SITE</a></button>
+            </div>
+            <img class="img-wrapper" src="https://res.cloudinary.com/depkh8amy/image/upload/v1685789727/BirdBox%20Code/Screenshot_2023-06-03_at_11.54.22_yeyntu.png">
+            <img class="img-wrapper" src="https://res.cloudinary.com/depkh8amy/image/upload/v1685789727/BirdBox%20Code/Screenshot_2023-06-03_at_11.54.35_hp7ftp.png">
             </div>
             <div class="separator">
               <span class="line-bot"></span>

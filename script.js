@@ -1,80 +1,94 @@
 // technique for this demo found here
 // http://stackoverflow.com/questions/22003491/animating-canvas-to-look-like-tv-noise
 
-const canvas = document.querySelector('canvas'),
-         ctx = canvas.getContext('2d')
+// const canvas = document.querySelector('canvas'),
+//          ctx = canvas.getContext('2d')
 
-canvas.width = canvas.height = 128
+// canvas.width = canvas.height = 128
 
-resize();
-window.onresize = resize;
+// resize();
+// window.onresize = resize;
 
-function resize() {
-	canvas.width = document.body.clientWidth * window.devicePixelRatio;
-	canvas.height = document.body.clientHeight * window.devicePixelRatio;
-	canvas.style.width = document.body.clientWidth + 'px';
-	canvas.style.height = document.body.clientHeight + 'px';
-}
+// function resize() {
+// 	canvas.width = document.body.clientWidth * window.devicePixelRatio;
+// 	canvas.height = document.body.clientHeight * window.devicePixelRatio;
+// 	canvas.style.width = document.body.clientWidth + 'px';
+// 	canvas.style.height = document.body.clientHeight + 'px';
+// }
 
-function noise(ctx) {
+// function noise(ctx) {
 
-	const w = ctx.canvas.width,
-				h = ctx.canvas.height,
-				iData = ctx.createImageData(w, h),
-				buffer32 = new Uint32Array(iData.data.buffer),
-				len = buffer32.length
-	  let i = 0
+// 	const w = ctx.canvas.width,
+// 				h = ctx.canvas.height,
+// 				iData = ctx.createImageData(w, h),
+// 				buffer32 = new Uint32Array(iData.data.buffer),
+// 				len = buffer32.length
+// 	  let i = 0
 
-	for(; i < len;i++)
+// 	for(; i < len;i++)
 
-		if (Math.random() < 0.5) buffer32[i] = 0xffffffff;
+// 		if (Math.random() < 0.5) buffer32[i] = 0xffffffff;
 
-		ctx.putImageData(iData, 0, 0);
-}
+// 		ctx.putImageData(iData, 0, 0);
+// }
 
-(function loop() {
-    noise(ctx);
-    requestAnimationFrame(loop);
-})();
+// (function loop() {
+//     noise(ctx);
+//     requestAnimationFrame(loop);
+// })();
 
 // Page reload
 
+const ggButton = document.getElementById('gg-btn');
 const behButton = document.getElementById('beh-btn');
 const naButton = document.getElementById('na-btn');
 const mossButton = document.getElementById('moss-btn');
 const pitchButton = document.getElementById('pitch-btn');
 
-const mossSection = document.getElementById('moss-section')
+const ggSection = document.getElementById('gg-section');
+const mossSection = document.getElementById('moss-section');
 const behSection = document.getElementById('beh-section');
 const naSection = document.getElementById('na-section');
-const pitchSection = document.getElementById('pitch-section')
+const pitchSection = document.getElementById('pitch-section');
 
 behButton.addEventListener('click', function() {
   behSection.style.display = 'block';
+  ggSection.style.display = 'none';
   naSection.style.display = 'none';
   mossSection.style.display = 'none';
-  pitchSection.style.display = 'none'
+  pitchSection.style.display = 'none';
+});
+
+ggButton.addEventListener('click', function() {
+  behSection.style.display = 'none';
+  ggSection.style.display = 'block';
+  naSection.style.display = 'none';
+  mossSection.style.display = 'none';
+  pitchSection.style.display = 'none';
 });
 
 naButton.addEventListener('click', function() {
   behSection.style.display = 'none';
+  ggSection.style.display = 'none';
   naSection.style.display = 'block';
   mossSection.style.display = 'none';
-  pitchSection.style.display = 'none'
+  pitchSection.style.display = 'none';
 });
 
 mossButton.addEventListener('click', function() {
   behSection.style.display = 'none';
+  ggSection.style.display = 'none';
   naSection.style.display = 'none';
   mossSection.style.display = 'block';
-  pitchSection.style.display = 'none'
+  pitchSection.style.display = 'none';
 });
 
 pitchButton.addEventListener('click', function() {
   behSection.style.display = 'none';
+  ggSection.style.display = 'none';
   naSection.style.display = 'none';
   mossSection.style.display = 'none';
-  pitchSection.style.display = 'block'
+  pitchSection.style.display = 'block';
 });
 
 // button colors
