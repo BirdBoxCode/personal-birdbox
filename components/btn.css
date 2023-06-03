@@ -15,7 +15,7 @@
   transition: 0.2s ease-in-out !important;
 }
 
-#beh-btn, #na-btn, #moss-btn, #pitch-btn {
+#beh-btn, #gg-btn, #na-btn, #moss-btn, #pitch-btn {
   width: 8vw;
   height: 15vh;
   border: none;
@@ -29,6 +29,11 @@
 }
 
 #beh-btn.active{
+  color: #fd36d4;
+  text-shadow: 0 0 12px #fd36d4;
+}
+
+#gg-btn.active{
   color: #fd36d4;
   text-shadow: 0 0 12px #fd36d4;
 }
