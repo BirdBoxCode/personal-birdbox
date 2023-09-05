@@ -51,42 +51,42 @@ const behSection = document.getElementById('beh-section');
 const naSection = document.getElementById('na-section');
 const pitchSection = document.getElementById('pitch-section');
 
-behButton.addEventListener('click', function() {
-  behSection.style.display = 'block';
+naButton.addEventListener('click', function() {
+  naSection.style.display = 'block';
   ggSection.style.display = 'none';
-  naSection.style.display = 'none';
+  behSection.style.display = 'none';
   mossSection.style.display = 'none';
   pitchSection.style.display = 'none';
 });
 
 ggButton.addEventListener('click', function() {
-  behSection.style.display = 'none';
-  ggSection.style.display = 'block';
   naSection.style.display = 'none';
+  ggSection.style.display = 'block';
+  behSection.style.display = 'none';
   mossSection.style.display = 'none';
   pitchSection.style.display = 'none';
 });
 
-naButton.addEventListener('click', function() {
-  behSection.style.display = 'none';
+behButton.addEventListener('click', function() {
+  naSection.style.display = 'none';
   ggSection.style.display = 'none';
-  naSection.style.display = 'block';
+  behSection.style.display = 'block';
   mossSection.style.display = 'none';
   pitchSection.style.display = 'none';
 });
 
 mossButton.addEventListener('click', function() {
-  behSection.style.display = 'none';
-  ggSection.style.display = 'none';
   naSection.style.display = 'none';
+  ggSection.style.display = 'none';
+  behSection.style.display = 'none';
   mossSection.style.display = 'block';
   pitchSection.style.display = 'none';
 });
 
 pitchButton.addEventListener('click', function() {
-  behSection.style.display = 'none';
-  ggSection.style.display = 'none';
   naSection.style.display = 'none';
+  ggSection.style.display = 'none';
+  behSection.style.display = 'none';
   mossSection.style.display = 'none';
   pitchSection.style.display = 'block';
 });
@@ -119,7 +119,7 @@ const siteLink = document.getElementById("site-btn");
 if (localStorage.getItem("defaultLink")) {
   siteLink.href = localStorage.getItem("defaultLink");
 } else {
-  siteLink.href = "https://beatemhub.com"; // Default link
+  siteLink.href = "https://www.nerdadvisor.org"; // Default link
 }
 
 // HEADER FADE
