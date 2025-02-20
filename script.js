@@ -1,43 +1,4 @@
-// technique for this demo found here
-// http://stackoverflow.com/questions/22003491/animating-canvas-to-look-like-tv-noise
-
-// const canvas = document.querySelector('canvas'),
-//          ctx = canvas.getContext('2d')
-
-// canvas.width = canvas.height = 128
-
-// resize();
-// window.onresize = resize;
-
-// function resize() {
-// 	canvas.width = document.body.clientWidth * window.devicePixelRatio;
-// 	canvas.height = document.body.clientHeight * window.devicePixelRatio;
-// 	canvas.style.width = document.body.clientWidth + 'px';
-// 	canvas.style.height = document.body.clientHeight + 'px';
-// }
-
-// function noise(ctx) {
-
-// 	const w = ctx.canvas.width,
-// 				h = ctx.canvas.height,
-// 				iData = ctx.createImageData(w, h),
-// 				buffer32 = new Uint32Array(iData.data.buffer),
-// 				len = buffer32.length
-// 	  let i = 0
-
-// 	for(; i < len;i++)
-
-// 		if (Math.random() < 0.5) buffer32[i] = 0xffffffff;
-
-// 		ctx.putImageData(iData, 0, 0);
-// }
-
-// (function loop() {
-//     noise(ctx);
-//     requestAnimationFrame(loop);
-// })();
-
-// Page reload
+// projects functions
 
 const ggButton = document.getElementById('gg-btn');
 const behButton = document.getElementById('beh-btn');
@@ -165,6 +126,40 @@ previewSection.addEventListener('scroll', function() {
   // Set the opacity of the header
   previewHeader.style.opacity = opacity;
 });
+
+
+// Static effect
+document.addEventListener("DOMContentLoaded", function () {
+  const canvas = document.getElementById("static-noise");
+  const ctx = canvas.getContext("2d");
+
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+
+  function generateNoise() {
+      const imageData = ctx.createImageData(canvas.width, canvas.height);
+      const buffer32 = new Uint32Array(imageData.data.buffer);
+      for (let i = 0; i < buffer32.length; i++) {
+          buffer32[i] = Math.random() < 0.5 ? 0x00000000 : 0xffffffff; // Random black or white pixel
+      }
+      ctx.putImageData(imageData, 0, 0);
+  }
+
+  function animateNoise() {
+      generateNoise();
+      requestAnimationFrame(animateNoise);
+  }
+
+  animateNoise();
+
+  // Update canvas size on resize
+  window.addEventListener("resize", function () {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+  });
+});
+
+
 
 
 // MOBILE
