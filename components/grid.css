@@ -63,7 +63,6 @@ nav ul {
 }
 
 .about-header {
-  height: 100vh;         /* Take full height of the viewport */
   overflow-y: auto;      /* Enable vertical scrolling */
 }
 
