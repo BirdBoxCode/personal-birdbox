@@ -56,7 +56,15 @@ nav ul {
   display: flex;
   flex-direction: column;
   padding-right: 1em;
+}
+
+.about-wrapper {
   height: 100%;
+}
+
+.about-header {
+  height: 100vh;         /* Take full height of the viewport */
+  overflow-y: auto;      /* Enable vertical scrolling */
 }
 
 .projects-section {
@@ -67,12 +75,6 @@ nav ul {
 .preview-section {
   grid-column: 5/10;
   margin-left: 1em;
-}
-
-.about-header {
-  position: sticky;
-  top: 0;
-  overflow-y: auto;
 }
 
 .projects-header {
